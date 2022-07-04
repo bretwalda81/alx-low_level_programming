@@ -5,6 +5,7 @@
 /**
 *main - checks if a random number is positive,
 *negative, or is zero
+*Return: Always 0 (Success)
 */
 int main(void)
 {

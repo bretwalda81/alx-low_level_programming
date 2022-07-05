@@ -12,7 +12,7 @@ int x = 97;
 while (x <= 122)
 {
 putchar(x);
-x = ++x;
+x = x + 1;
 }
 putchar(10);
 return (0);

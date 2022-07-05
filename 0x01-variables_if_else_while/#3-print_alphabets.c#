@@ -1,0 +1,27 @@
+
+
+/**
+*main- printa the entire alphabet
+*in lower case ending with newline
+*Return: Always 0 (Success)
+*/
+int main(void)
+{
+int x;
+x = 97;
+
+while (x <= 122)
+{
+putchar(x);
+x = x + 1;
+}
+x = 65;
+
+while (x <= 90)
+{
+putchar(x);
+x = x + 1;
+}
+putchar(10);
+return (0);
+}

@@ -10,8 +10,8 @@ int x;
 
 for (x = 0; x < 10; x++)
 {
-getchar(x)
+putchar(x)
 }
-getchar(10);
+putchar(10);
 return (0);
 }

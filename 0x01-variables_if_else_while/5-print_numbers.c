@@ -6,13 +6,12 @@
 */
 int main(void)
 {
-int x = 0;
+int x;
 
-while (x < 10)
+for (x = 0; x < 10; x++)
 {
-putchar(x);
-x = x + 1;
+printf("%d", x);
 }
-putchar(10);
+printf("\n");
 return (0);
 }

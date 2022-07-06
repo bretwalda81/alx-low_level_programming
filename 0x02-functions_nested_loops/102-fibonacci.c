@@ -18,7 +18,7 @@ printf("%ld, ", x);
 }
 else
 {
-  printf("%ld\n", x);
+printf("%ld\n", x);
 }
 z = x + y;
 x = y;

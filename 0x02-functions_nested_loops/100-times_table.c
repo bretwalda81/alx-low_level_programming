@@ -10,15 +10,15 @@ int x, y, z;
 
 if (n >= 0 && n < 16)
 {
-for (x = 0; x < n; x++)
+for (x = 0; x <= n; x++)
 {
-for (y = 0; y < n; y++)
+for (y = 0; y <= n; y++)
 {
 z = y * x;
 
 if (y == 0)
 _putchar(z + '0');
-else if (z < 10 && y != 0)
+if (z < 10 && y != 0)
 {
 _putchar(',');
 _putchar(' ');

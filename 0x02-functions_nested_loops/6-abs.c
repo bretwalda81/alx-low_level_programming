@@ -3,15 +3,15 @@
 
 /**
 * _abs - computes the absolute value of an integer
-* @c: the parameter for the function
+* @r: the parameter for the function
 * Return: 0
 */
-int _abs(int c)
+int _abs(int r)
 {
-if (c > 0 || c == 0)
+if (r > 0 || r == 0)
 {
-return (c);
+return (r);
 }
 else
-return (c * -1);
+return (r * -1);
 }

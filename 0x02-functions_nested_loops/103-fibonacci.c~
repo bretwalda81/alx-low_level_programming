@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+/**
+* main - finds and prints the sum of even liber abbaci
+* Return: Always 0 (Sucess)
+*/
+int main(void)
+{
+int x;
+unsigned long int sum, y, z, jump;
+y = 1;
+z = 2;
+sum = 0;
+
+for (x = 1; x <= 33; x++)
+{
+if (y < 4000000 && (y % 2) == 0)
+{
+sum += y;
+}
+jump = y + z;
+y = z;
+z = jump;
+}
+printf("%lu\n", sum)
+return (0);
+}

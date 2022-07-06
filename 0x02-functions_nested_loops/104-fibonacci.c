@@ -11,7 +11,6 @@ b = 1;
 c = 2;
 
 printf("%lu", b);
- 
 for (a = 1; a < 94; a++)
 {
 printf(", %lu", c);

@@ -10,19 +10,19 @@ int a, b, c;
 
 for (a = 1; a <= size; a++)
 {
-if (size > 0)
+for (b = size; b >= 1; b--)
 {
-for (b = 1; b <= size - a; b++)
-{
-_putchar(' ');
-}
-for (c = 1; c <= a; c++)
+if (b <= 1)
 {
 _putchar('#');
 }
+else
+_putchar(' ');
+}
 _putchar('\n');
 }
-else
+if (size <= 0)
+{
 _putchar('\n');
 }
 return (0);

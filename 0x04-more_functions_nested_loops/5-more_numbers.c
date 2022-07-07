@@ -4,11 +4,10 @@
 * more_numbers - function
 * to print the numbers 1 to 14 10 times
 *
-* Return: Always 0 (Success)
 */
 void more_numbers(void)
 {
-int x, y;
+int x, z;
 for (x = 0; x <= 9; x++)
 {
 int z = 0;

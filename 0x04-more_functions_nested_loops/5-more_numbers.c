@@ -23,6 +23,6 @@ _putchar((z % 10) + '0');
 }
 z++;
 }
-printf("\n");
+_putchar('\n');
 }
 }

@@ -10,7 +10,7 @@ int a, b;
 
 for (a = 1; a <= size; a++)
 {
-if (n > 0)
+if (size > 0)
 {
 for (b = 1; b <= size; b++)
 _putchar('#');

@@ -11,18 +11,18 @@ void more_numbers(void)
 char x, y;
 for (x = 0; x <= 9; x++)
 {
-  int z = 0;
-  while (z <= 14)
-    {
-      if (z < 10)
-	_putchar(z + '0');
-      else
-	{
-	  _putchar((z / 10) + '0');
-	  _putchar((z % 10) + '0');
-	}
-      z++;
-    }
-_putchar('\n');
+int z = 0;
+while (z <= 14)
+{
+if (z < 10)
+_putchar(z + '0');
+else
+{
+_putchar((z / 10) + '0');
+_putchar((z % 10) + '0');
+}
+z++;
+}
+printf("\n");
 }
 }

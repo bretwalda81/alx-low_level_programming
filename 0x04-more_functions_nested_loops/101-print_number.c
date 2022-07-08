@@ -12,7 +12,7 @@ c = 1;
 
 if (n < 0)
 {
-_putchar('-')
+_putchar('-');
 n = -n;
 }
 n1 = n;

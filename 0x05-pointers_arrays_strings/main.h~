@@ -1,0 +1,5 @@
+/**
+* Declarations for pointers, arrays and strings
+*/
+
+int _putchar(char);

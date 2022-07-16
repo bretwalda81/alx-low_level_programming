@@ -21,16 +21,16 @@ c[i] = c[i] - 32;
 }
 continue;
 }
-if
-(c[i] == ' ' || c[i] == '\t' || c[i] == '\n' || c[i] == ',' || c[i] == ';' ||
-c[i] == '.' || c[i] == '!' || c[i] == '?' || c[i] == '\"' || c[i] == '(' ||
-c [i] == '}' || c[i] == '{' || c[i] == '}')
+for (j = 0; seperators[j] != 0; j++)
+{
+if (c[i] == seperators[j])
 {
 ++i;
 if (c[i] >= 'a' && c[i] <= 'z')
 {
 c[i] = c[i] - 32;
 continue;
+}
 }
 }
 }

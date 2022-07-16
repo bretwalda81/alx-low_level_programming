@@ -17,8 +17,14 @@ if (c[0] >= 'a' && c[0] <= 'z')
 c[0] = c[0] - 32;
 for (j = 0; seperators != '\0'; j++)
 {
-if (c[i] == seperators[j] && c[i + 1] >= 'a' && c[i + 1] <= 'z')
+if (c[i] == seperators[j])
+{
+++i;
+if (c[i] >= 'a' && c[i] <= 'z')
+{
 c[i + 1] = c[i + 1] - 32;
+}
+}
 }
 }
 return (c);

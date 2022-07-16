@@ -22,7 +22,7 @@ if (c[i] == seperators[j])
 ++i;
 if (c[i] >= 'a' && c[i] <= 'z')
 {
-c[i + 1] = c[i + 1] - 32;
+c[i] = c[i] - 32;
 }
 }
 }

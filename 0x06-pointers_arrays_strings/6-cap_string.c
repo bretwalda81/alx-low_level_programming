@@ -13,17 +13,24 @@ char seperators[] = " \t\n,;.!?\"(){}";
 
 for (i = 0; c[i] != '\0'; i++)
 {
-if (c[0] >= 'a' && c[0] <= 'z')
-c[0] = c[0] - 32;
-for (j = 0; seperators != '\0'; j++)
+if (i == 0)
 {
-if (c[i] == seperators[j])
+if (c[i] >= 'a' && c[i] <= 'z')
+{
+c[i] = c[i] - 32;
+}
+continue;
+}
+if
+(c[i] == ' ' || c[i] == '\t' || c[i] == '\n' || c[i] == ',' || c[i] == ';' ||
+c[i] == '.' || c[i] == '!' || c[i] == '?' || c[i] == '\"' || c[i] == '(' ||
+c [i] == '}' || c[i] == '{' || c[i] == '}')
 {
 ++i;
 if (c[i] >= 'a' && c[i] <= 'z')
 {
 c[i] = c[i] - 32;
-}
+continue;
 }
 }
 }

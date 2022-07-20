@@ -2,20 +2,31 @@
 
 /**
 * print_number - prints an integer
-* @n: integer
+* @n: the integer to be printed
 */
-
 void print_number(int n)
 {
-unsigned int i;
+unsigned int b, c, n1, rnk, val;
+rnk = 1;
+c = 1;
 
-i = n;
-if (n > 0)
+if (n < 0)
 {
 _putchar('-');
-i = -n;
+n = -n;
 }
-if (i / 10 != 0)
-print_number(i / 10);
-_putchar((i % 10) + '0');
+n1 = n;
+while (n1 > 9)
+{
+n1 = n1 / 10;
+c++;
+rnk = rnk * 10;
+}
+for (b = 0; b < c; b++)
+{
+val = n / rnk;
+n = n % rnk;
+rnk = rnk / 10;
+_putchar (val + '0');
+}
 }

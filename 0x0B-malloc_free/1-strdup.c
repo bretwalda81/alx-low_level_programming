@@ -21,8 +21,12 @@ k++;
 dest = malloc(sizeof(char) * (i + 1));
 if (str == NULL)
 return (NULL);
-
+if (dest != NULL)
+{
 for (j = 0; j <= i; j++)
 dest[j] = str[j];
 return (dest);
+}
+else
+return (NULL);
 }

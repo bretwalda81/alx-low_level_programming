@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -20,7 +21,10 @@ k++;
 }
 dest = malloc(sizeof(char) * (i + 1));
 if (str == NULL)
+{
 return (NULL);
+printf("failed to allocate memory");
+}
 if (dest != NULL)
 {
 for (j = 0; j <= i; j++)

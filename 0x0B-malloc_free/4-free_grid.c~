@@ -1,0 +1,32 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+* alloc_grid - points to a 2D rray of integers
+* @width: width of the array
+* @height: height of the array
+* Return: pointer to the array
+*/
+int **alloc_grid(int width, int height)
+{
+int i, j;
+int *ptr = NULL;
+
+if (width < 1 || height < 1)
+return (NULL);
+ptr = (int *)malloc(sizeof(int) * width * height);
+for (i = 0; i < height * width; i++)
+{
+}
+return (ptr);
+}
+
+/**
+* free_grid - frees 2D grid creted by prev alloc_grid function
+* @grid: pointer to pointer to grid
+* @height: height of the grid
+*/
+void free_grid(int **grid, int height)
+{
+free(ptr);
+}

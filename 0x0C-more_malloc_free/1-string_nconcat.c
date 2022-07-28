@@ -31,13 +31,11 @@ n = j;
 s3 = malloc(sizeof(char) * (i + n + 1));
 if (s3 == NULL)
 return (NULL);
-else
-{
-for (k = 0; k < i; k++)
+
+for (k = 0; s1[k] != '\0'; k++)
 s3[k] = s1[k];
-for (l = 0; l < j; k++, l++)
+for (l = 0; l < n; k++, l++)
 s3[k] = s2[l];
 s3[k] = '\0';
 return (s3);
-}
 }

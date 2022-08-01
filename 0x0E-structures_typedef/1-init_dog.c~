@@ -1,0 +1,19 @@
+#include <stdlib.h>
+#include "dog.h"
+
+/**
+* init_dog - initialise varriable struct dog
+* @d: struct name
+* @name: name of dog
+* @age: age
+* @owner: owner
+*/
+void init_dog(struct dog *d, char *name, flot age, char *owner)
+{
+if (d)
+{
+d->name = name;
+d->age = age;
+d->owner = owner;
+}
+}

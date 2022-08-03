@@ -19,9 +19,17 @@ if (argc != 4)
 printf("Error\n");
 exit(98);
 }
+
+if ((*argv[2] == '/' || *argv[2] == '%') && *argv[3] == '0')
+{
+printf("Error\n");
+exit(100);
+}
+
 i = atoi(argv[1]);
 j = atoi(argv[3]);
 f = get_op_func(argv[2]);
+
 if (f == NULL)
 {
 printf("Error\n");

@@ -1,7 +1,5 @@
-
-/**
-* Declarations for static libraries
-*/
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
@@ -24,3 +22,5 @@ int _strlen(char *s);
 void _puts(char *s);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
+
+#endif

@@ -16,5 +16,5 @@ while (hold)
 sum += hold->n;
 hold = hold->next;
 }
-return (sum)
+return (sum);
 }

@@ -16,5 +16,5 @@ while (hold && i < index)
 hold = hold->next;
 i++;
 }
-return (temp ? temp : NULL);
+return (hold ? hold : NULL);
 }

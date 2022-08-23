@@ -18,7 +18,7 @@ fp = open(filename, O_RDONLY);
 
 if (fp == -1)
 return (0);
-buffer = malloc(sizeof(chat) * letters + 1);
+buffer = malloc(sizeof(char) * letters + 1);
 if (buffer == NULL)
 return (0);
 
@@ -37,5 +37,5 @@ return (0);
 }
 close(fp);
 free(buffer);
-return(i);
+return (i);
 }

@@ -14,7 +14,7 @@ char *buffer = NULL;
 
 if (filename == NULL)
 return (-1);
-fp = open(filename, O_APPEND | 0_WRONGLY);
+fp = open(filename, O_APPEND | O_WRONLY);
 if (fp == -1)
 return (-1);
 
